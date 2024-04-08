@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <form action="#">
+            <h1>Cadastro</h1>
+
+            <div class="content">
+                <label for="txtEmail">E-mail</label>
+                <input type="email" id="txtEmail" required>
+                <label for="txtSenha">Senha</label>
+                <input type="password" id="txtSenha" required>
+                <label for="txtSenha">Confirmar senha</label>
+                <input type="password" id="txtSenha" required>
+                <div class="check">
+                    <input type="checkbox" name="concordar" id="concordar" onchange="disableBtn()">
+                    <label for="concordar">Manter-me conectado</label> 
+                </div>
+                
+
+                
+            </div>
+
+            <input type="submit" id="btn" value="Confirmar" required disabled>
+
+            <div class="lower-part">
+                <p class="cadastro">Já possui uma conta? <a href="index.html">Login</a></p>
+            </div>
+        </form>
+    </main>
+
+
+    <script src="js/terms.js"></script>
+</body>
+</html>

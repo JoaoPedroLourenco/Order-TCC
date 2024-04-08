@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    background: rgb(255, 169, 169);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imgs/onda.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+main > form{
+    width: 30em;
+    height: 36em;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0% 3%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+}
+
+form > h1{
+    margin-top: -50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+form > .content > .check{
+    display: flex;
+    gap: .5em;
+}
+
+form > #btn{
+    background: red;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .1s;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+#btn:hover{
+    background: rgb(182, 1, 1);
+}
+
+#btn:disabled{
+    background: rgb(255, 67, 67);
+    color: white;
+    cursor: default;
+}
+
+form > .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form > .content > input{
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.3);
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+form > .content >  .check > input{
+    width: 15px;
+    accent-color: red;
+    cursor: pointer;
+}
+
+form > .content >  label{
+    font-size: 1em;
+    margin-bottom: 2px;
+}
+
+.lower-part{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lower-part > a{
+    color: red;
+}
+
+.cadastro{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cadastro > a {
+    color: red;
+}
+
+hr{
+    margin: 5% 0%;
+    color: rgb(171, 0, 0);
+}
