@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #FFD287;
+    background: #d4d4d4;
 }
 
 main{
@@ -15,10 +15,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/imgs/onda-amarela.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position:0px 400px;
 }
 
 main > form{
