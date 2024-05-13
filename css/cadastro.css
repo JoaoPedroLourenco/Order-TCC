@@ -15,6 +15,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/imgs/LogoBackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 main > form{

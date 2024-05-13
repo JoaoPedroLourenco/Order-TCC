@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/navBar.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/LandingPage.css">
+    <title>Order - Organização de restaurantes</title>
 </head>
 <body>
     <div class="container">
@@ -18,9 +18,8 @@
                     <img src="imgs/1-removebg-preview 2.png" alt="">
                 </div>
                 <ul>
-                    <a href="LandingPage.html"><li>Home</li></a>
+                    <a href="LandingPage.html"><li>Sobre nós</li></a>
                     <a href=""><li>Fale Conosco</li></a>
-                    <a href=""><li>Informações</li></a>
                 </ul>
             </nav>
             <div class="login-navBar">
@@ -30,36 +29,64 @@
         </header>
 
         <main>
-        
-            <form action="#">
-                <h1>Login</h1>
-    
-                <div class="content">
-                    <label for="txtEmail">E-mail</label>
-                    <input type="email" id="txtEmail" required>
-                    <label for="txtSenha">Senha</label>
-                    <input type="password" id="txtSenha" required>
-                    <div class="check">
-                        <input type="checkbox" name="concordar" id="concordar" onchange="disableBtn()">
-                        <label for="concordar">Manter-me conectado</label> 
-                    </div>
-                    
-    
-                    
-                </div>
-    
-                <input type="submit" id="btn" value="Confirmar" required disabled>
-    
-                <div class="lower-part">
-                    <a href="#" class="forgotPassword">Esqueci minha senha</a>
-                    <p class="cadastro">Não possui uma conta? <a href="Cadastro.html">Cadastre-se</a></p>
-                </div>
-            </form>
-        </main>
-        
-    </div>
-   
+            <div class="lado-esq-home">
+                <h1>UM AMBIENTE <br>
+                    DE TRABALHO <br>
+                    <span style="color:#EF233C">ORGANIZADO</span><br>
+                    FAZ A DIFERENÇA</h1>
 
-    <script src="js/loginPage.js"></script>
+                    <p>Deixe seu restaurante organizado com a Order e poupe tempo no seu dia-a-dia!</p>
+            </div>
+            <div class="lado-dir-home">
+                <img src="imgs/Team work-bro 2.png" alt="Order, Organização de restaurantes.">
+            </div>
+
+        </main>
+
+        <section id="info-sobre">
+            <div class="info-sobre-text">
+                <h1>Tenha total controle do seu restaurante</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde velit odio sit ducimus recusandae odit consectetur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde velit odio sit ducimus recusandae odit consectetur!</p>
+            </div>
+        </section>
+
+
+        <section id="info-cards">
+            <div class="cards">
+                <div class="card">
+                    <img src="imgs/Hard to Find.png" alt="">
+                    <h3>Descomplique</h3>
+                    <p>Organize seu restaurante com nosso sistema de mesas e cardápio personalizados, podendo ver preços e anotar pedidos</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/Puzzle Matching.png" alt="">
+                    <h3>Descomplique</h3>
+                    <p>Organize seu restaurante com nosso sistema de mesas e cardápio personalizados, podendo ver preços e anotar pedidos</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/Ok.png" alt="">
+                    <h3>Descomplique</h3>
+                    <p>Organize seu restaurante com nosso sistema de mesas e cardápio personalizados, podendo ver preços e anotar pedidos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="valores-etica">
+            <div class="valores">
+                <h1>Valores</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde velit odio sit ducimus recusandae odit consectetur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde velit odio sit ducimus recusandae odit consectetur!</p>
+            </div>
+
+            <div class="etica">
+                <h1>Ética</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde velit odio sit ducimus recusandae odit consectetur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde velit odio sit ducimus recusandae odit consectetur!</p>
+            </div>
+        </section>
+
+
+        <footer>
+            <p>2024 &copy; Order: Organização de restaurantes</p>
+        </footer>
+    </div>
 </body>
 </html>

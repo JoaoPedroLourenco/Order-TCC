@@ -14,12 +14,12 @@
 
 .container > header {
     width: auto;
-    height: 6vh;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
-    padding: 0px 10px;
+    padding: 0px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,7 +44,7 @@ nav > .logo > img{
 nav > ul{
     display: flex;
     list-style: none;
-    
+    gap: 1em;
 }
 
 nav > ul > a{
@@ -53,9 +53,13 @@ nav > ul > a{
 }
 
 nav > ul > a > li{
-    padding: 10px;
     font-size: 1.2em;
     font-weight: 500;
+    transition: .2s;
+}
+
+nav > ul > a > li:hover{
+    color: #EF233C;
 }
 
 header > .login-navBar{
@@ -68,6 +72,7 @@ header > .login-navBar > a > button{
     height: 25px;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 header > .login-navBar > a {
@@ -82,7 +87,9 @@ header > .login-navBar > a > .login-btn{
 }
 
 header > .login-navBar > a > .login-btn:hover{
-    box-shadow: 0px 2px 0px  #ef233b76;
+    background-color: #EF233C;
+    border: none;
+    color: white;
 }
 
 header > .login-navBar > a > .cadastro-btn{
@@ -93,5 +100,7 @@ header > .login-navBar > a > .cadastro-btn{
 }
 
 header > .login-navBar > a > .cadastro-btn:hover{
-    box-shadow: 0px 2px 0px  #ff6a7b;
+    border: 1px solid #EF233C;
+    background: white;
+    color: #EF233C;
 }
