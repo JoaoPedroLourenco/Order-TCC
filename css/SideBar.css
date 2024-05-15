@@ -84,12 +84,16 @@ aside > .expand > button{
     cursor: pointer;
 }
 
-aside > .expand > button > img{
-    width: 30px;
-    height: 30px;
+aside > .expand > img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .1s;
 }
 
-aside > .expand > button:hover{
+aside > .expand > img:hover{
     background: #80808067;
 }
 
