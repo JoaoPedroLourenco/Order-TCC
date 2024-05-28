@@ -1,11 +1,11 @@
-function disableBtn(){
-    const checkBox = document.getElementById("concordar")
-    const btn = document.getElementById("btn")
-    let checar = checkBox.checked
+function disableBtn() {
+  const checkBox = document.getElementById("checkBox");
+  const btn = document.getElementById("btnSubmit");
+  let checar = checkBox.checked;
 
-    if(checar){
-        btn.disabled = false
-    } else{
-        btn.disabled = true
-    }
+  if (checar) {
+    btn.disabled = false;
+  } else {
+    btn.disabled = true;
+  }
 }

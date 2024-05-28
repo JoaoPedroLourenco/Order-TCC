@@ -7,113 +7,119 @@
 
 body{
     background: #d4d4d4;
+    overflow: hidden;
 }
 
-main{
+.loginScreenContainer{
     width: 100vw;
     height: 100vh;
     display: flex;
+}
+
+.loginScreenContainer .formContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/imgs/LogoBackground.png);
-    background-size: contain;
-}
-
-main > form{
-    width: 30em;
-    height: 36em;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 0% 3%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    margin-top: 10px;
 }
 
-form > h1{
-    margin-top: -50px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 3em;
-    text-transform: uppercase;
+.formContainer h1{
+    font-size: 5em;
+    margin-bottom: 80px;
+}
+
+.formContainer form{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form  input{
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+form > input:focus{
+    outline: 1px solid #ef233b4a;
+}
+
+form label{
+    font-size: 1em;
+    margin: 5px;
     font-weight: 500;
 }
 
-form > .content > .check{
+form .check{
     display: flex;
-    gap: .5em;
+    align-items: center;
 }
 
-form > #btn{
-    background: red;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: .1s;
-    margin-top: 30px;
-    font-size: 1.2em;
+.check label{
+    margin-bottom: 23px;
 }
 
-#btn:hover{
-    background: rgb(182, 1, 1);
+.check #checkBox{
+    width: 20px;
+    height: 20px;
+    accent-color: #EF233C;
 }
 
-#btn:disabled{
-    background: rgb(255, 67, 67);
-    color: white;
-    cursor: default;
-}
-
-form > .content{
+.btn{
+    width: 100%;
+    height: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-}
-
-form > .content > input{
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.3);
-    outline: none;
     margin-bottom: 20px;
-    font-size: 1.2em;
+    margin-top: 20px;
 }
 
-form > .content >  .check > input{
-    width: 15px;
-    accent-color: red;
+form #btnSubmit{
+    width: 60%;
+    background: #EF233C;
+    color: white;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-form > .content >  label{
-    font-size: 1em;
-    margin-bottom: 2px;
+#btnSubmit:hover{
+    transition: .1s;
+    background: #db394c;
 }
 
 .lower-part{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     text-align: center;
-    margin-top: 20px;
+    font-size: 1.2em;
 }
 
-.lower-part > a{
-    color: red;
+.lower-part a{
+    color: #EF233C;
 }
 
-.cadastro{
-    margin-top: 20px;
-    text-align: center;
+.lower-part a:hover{
+    transition: .1s;
+    color: rgb(103, 0, 0);
 }
 
-.cadastro > a {
-    color: red;
-}
-
-hr{
-    margin: 5% 0%;
-    color: rgb(171, 0, 0);
+.imagemLogin{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imgs/LogoBackground.png);
+    background-position: cover;
+    background-position: center;
+   
 }

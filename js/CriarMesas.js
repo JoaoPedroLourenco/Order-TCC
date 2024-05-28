@@ -1,6 +1,6 @@
 let contador = 0;
 
-function gerarQuadrado() {
+function criarMesa() {
   contador++;
 
   let mesa = document.createElement("div");

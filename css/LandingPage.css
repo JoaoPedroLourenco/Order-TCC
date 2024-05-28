@@ -12,268 +12,56 @@ main > .lado-esq-home{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 }
 
 .lado-esq-home > h1{
-    font-size: 5em;
-    font-weight: 600;
+    font-size: 6.5em;
+    font-weight: 500;
     line-height: 90%;
 }
 
 .lado-esq-home > p{
     font-size: 1.5em;
-    max-width: 80%;
 }
 
+.lado-esq-home > button{
+    width: 250px;
+    padding: 15px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .1s;
+}
 
-#info-sobre{
-    width: auto;
-    height: 30vh;
-    background: white ;
+button:hover{
+    background: #cd0101;
+}
+
+.container #mobileVideo{
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    z-index: 1;
-}
-
-#info-sobre > .info-sobre-text{
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    padding-top: 50px;
-}
-
-#info-sobre > .info-sobre-text > h1{
-    font-size: 2.5em;
-    color: #EF233C;
-}
-
-#info-sobre > .info-sobre-text > p{
-    font-size: 1.5em;
-}
-
-#info-cards{
-    width: auto;
-    background: #EF233C;
-    margin-top: -30px;
-    margin-bottom: -15px;
-    z-index: -1;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#info-cards > .cards{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     gap: 2em;
-    padding-top: 30px;
+    margin-bottom: 20%;
+    background: linear-gradient(to bottom, #9999 0%, white 100%);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
-.cards > .card{
-    width: 350px;
-    height: 210px;
-    border-radius: 10px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: .5em;
-}
-
-.card > img{
-    width: 50px;
-    height: 50px;
-}
-
-.card > h3{
-    font-size: 1.5em;
-    color: #EF233C;
-    font-weight: 400;
-}
-
-#valores-etica{
-    width: auto;
-    height: 40vh;
-    display: flex;
-    margin-top: -8px;
-    text-align: center;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    z-index: 1;
-    background: white;
-}
-
-#valores-etica > .valores{
-    width: 50%;
-    height: 100%;
+video{
+    width: 60%;
+    margin-top: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-   
-}
-
-.valores > h1{
-    font-size: 2.5em;
-    font-weight: 500;
-    color: #EF233C;
-}
-
-.valores > p{
-    width: 60%;
-    font-size: 1.2em;
-}
-
-#valores-etica > .etica{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.etica > h1{
-    font-size: 2.5em;
-    font-weight: 500;
-    color: #EF233C;
-}
-
-.etica > p{
-    width: 60%;
-    font-size: 1.2em;
-}
-
-
-footer{
-    text-align: center;
-}
-
-
-
-
-
-
-@media (max-width: 1024px){
-
-    main > .lado-esq-home{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    
-    .lado-esq-home > h1{
-        font-size: 4em;
-    }
-
-
-    .lado-dir-home{
-        display: none;
-        position: absolute;
-    }
-
-    .lado-dir-home > img{
-        display: none;
-        position: absolute;
-    }
-
-    #info-sobre > .info-sobre-text > h1{
-        font-size: 1.2em;
-    }
-}
-
-
-@media (max-width: 528px){
-    main > .lado-esq-home{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    
-    .lado-esq-home > h1{
-        font-size: 3em;
-    }
-
-
-    .lado-dir-home{
-        display: none;
-        position: absolute;
-    }
-
-    .lado-dir-home > img{
-        display: none;
-        position: absolute;
-    }
-    
-    #info-sobre{
-        margin-top: -100px;
-    }
-
-    #info-sobre > .info-sobre-text > h1{
-        font-size: 1.5em;
-    }
-
-    #info-sobre > .info-sobre-text > p{
-        font-size: .9em;
-    }
-
-    #info-cards{
-        display: flex;
-        height: auto;
-        margin: 20px;
-        border-radius: 20px;
-    }
-
-    #info-cards > .cards{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-
-    .card > img{
-        width: 30px;
-        height: 30px;
-    }
-
-    #valores-etica{
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #valores-etica > .etica{
-       width: 100%;
-       padding: 50px;
-    }
-
-    #valores-etica > .etica > h1{
-        font-size: 2em;
-    }
-
-    #valores-etica > .valores{
-        width: 100%;
-        padding: 50px;
-     }
- 
-     #valores-etica > .valores > h1{
-         font-size: 2em;
-     }
+    border: 2px solid red;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
 }

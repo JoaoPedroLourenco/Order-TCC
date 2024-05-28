@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/SideBar.css">
+    <link rel="stylesheet" href="./css/mesas.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside id="sideBar">
+        <div class="expand">
+            <img src="imgs/menu-aberto.png" id="aumentar" alt="expandir">
+        </div>
+        <nav>
+            <ul>
+                <li><img src="imgs/table.png" alt="Mesas" ><p>Mesas</p></li>
+                <li><img src="imgs/cardapio.png" alt="cardapio" ><p>Cardápio</p></li>
+                <li style="padding:15px;" ><img src="imgs/app-wallet-passes.png" alt="renda" style="width: 50px; height: 50px;" ><p>Renda</p></li>
+                <li><img src="imgs/estoque.png" alt="estoque" ><p>Estoque</p></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="imgs/1-removebg-preview 2.png" alt="Order">
+        </div>
+    </aside>
+
+    <div class="container">
+        <div class="mesas-container">
+            <button onclick=criarMesa()>Adicionar mesa</button>
+            
+            <div id="mesas">
+                <!--- As mesas criadas pelo botão ficam aqui dentro --->
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/CriarMesas.js"></script>
+    <!-- <script src="js/ExpandirSideBar.js"></script> -->
+</body>
+</html>

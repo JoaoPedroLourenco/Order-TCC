@@ -1,0 +1,33 @@
+.container > main{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > .titulo-erro{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 48px;
+    padding-top: 80px;
+}
+
+.titulo-erro > p > a{
+    color: red;
+}
+
+.paragrafo-erro > p > .cor{
+    
+    color: red;
+}
+
+main > .img-erro{
+   padding: 40px 0 30px;
+}
+
+main > .paragrafo-erro{
+    font-size: 55px;
+    text-transform: uppercase;
+}
