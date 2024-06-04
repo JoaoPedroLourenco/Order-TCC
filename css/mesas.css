@@ -5,8 +5,12 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+main{
+    width: 100px;
+    height: 100vh;
     display: flex;
+    align-items: center;
+    margin-left: 90px;
 }
 
 .mesasCriadas{

@@ -46,9 +46,11 @@ aside > .expand > img:hover{
 
 aside > nav{
     display: flex;
+    width: 100%;
 }
 
 aside > nav > ul{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,15 +61,12 @@ aside > nav > ul{
 
 aside > nav > ul > li{
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
 }
-
-
 
 aside > nav > ul > li:hover{
     background: #80808067;
