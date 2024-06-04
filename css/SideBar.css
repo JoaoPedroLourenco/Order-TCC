@@ -1,91 +1,63 @@
-#sideBar{
+aside{
     width: 90px;
     height: 100vh;
-    background-color: white;
-    border-right: 1px solid #ef233b30;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
-    transition: .2s;
-    overflow: hidden;
-    position: fixed;
-    padding: 0;
+    gap: 5em;
+    border-right: 1px solid red;
 }
 
-aside > .expand{
+aside .logo{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-aside > .expand > button{
+aside .logo img{
+    padding: 20px;
+    width: 100px;
+}
+
+aside nav{
+    width: 100%;
+}
+
+aside nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+aside nav ul li{
+    width: 100%;
+    height: auto;
+}
+
+aside nav ul li button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
     border: none;
     background: none;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-aside > .expand > img{
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    cursor: pointer;
     transition: .1s;
+    touch-action: none;
 }
 
-aside > .expand > img:hover{
-    background: #80808067;
+aside nav ul li button img{
+    width: 50px;
 }
 
-aside > nav{
-    display: flex;
-    width: 100%;
+aside nav ul li button:hover{
+    background: rgba(128, 128, 128, 0.292);
 }
 
-aside > nav > ul{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    flex-direction: column;
-    gap: 1em;
-}
-
-aside > nav > ul > li{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-aside > nav > ul > li:hover{
-    background: #80808067;
-}
-
-aside > nav > ul > li > img{
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-aside > .logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-aside > .logo > img{
-    width: 100px;
+aside nav ul li button:focus{
+    background: rgba(255, 0, 0, 0.249);
+    outline: none;
 }
