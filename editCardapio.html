@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/SideBar.css">
+    <link rel="stylesheet" href="css/editCardapio.css">
+    <title>Mesas - Order</title>
+</head>
+<body>
+        <aside id="sideBar">
+            <nav>
+                <ul>
+                    <div class="slider"></div>
+                    <li><a href="mesas.html"><button ><img src="imgs/mesaPNG.png" alt="Mesas"><p>Mesas</p></button></a></li>
+                    <li><a href="cardapio.html"><button id="segundo"><img src="imgs/cardapioPng.png" alt="cardapio"><p>Cardápio</p></button></a></li>
+                    <li><a href="estoque.html"><button><img src="imgs/estoquePng.png" alt="Estoque" ><p>Estoque</p></button></a></li>
+                    <li><a href="renda.html"><button><img src="imgs/Renda.png" alt="Renda"><p>Renda</p></button></a></li>
+                </ul>
+            </nav>
+ 
+            <div class="logo">
+                <img src="imgs/logoMenor.png" alt="Order">
+            </div>
+           
+        </aside>
+
+        <div class="containerEditCardapio">
+            <h1>Edição do Cardápio</h1>
+
+            <form class="formAddProdutoCardapio">
+                <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome do produto">
+                <input type="text" name="descProduto" id="descProduto" placeholder="Descrição do produto">
+                <input type="number" name="precoProduto" id="precoProduto" placeholder="Preço do produto">
+
+                <button onclick="cadastrarProduto()">Confirmar</button>
+            </form>
+
+            <div class="containerProdutosCriados">
+
+            </div>
+        </div>
+
+</body>
+</html>

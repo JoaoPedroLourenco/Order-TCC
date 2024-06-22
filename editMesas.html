@@ -1,41 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/SideBar.css">
-    <link rel="stylesheet" href="./css/editMesas.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/SideBar.css">
+    <link rel="stylesheet" href="css/editMesas.css">
+    <title>Mesas - Order</title>
 </head>
 <body>
-    <aside id="sideBar">
-        <div class="expand">
-            <img src="imgs/menu-aberto.png" id="aumentar" alt="expandir">
-        </div>
-        <nav>
-            <ul>
-                <li><img src="imgs/table.png" alt="Mesas" ><p>Mesas</p></li>
-                <li><img src="imgs/cardapio.png" alt="cardapio" ><p>Cardápio</p></li>
-                <li style="padding:15px;" ><img src="imgs/app-wallet-passes.png" alt="renda" style="width: 50px; height: 50px;" ><p>Renda</p></li>
-                <li><img src="imgs/estoque.png" alt="estoque" ><p>Estoque</p></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="imgs/1-removebg-preview 2.png" alt="Order">
-        </div>
-    </aside>
-
-    <div class="container">
+       
+ 
+        <aside id="sideBar">
+            <nav>
+                <ul>
+                    <div class="slider"></div>
+                    <li><a href="mesas.html"><button ><img src="imgs/mesaPNG.png" alt="Mesas"><p>Mesas</p></button></a></li>
+                    <li><a href="cardapio.html"><button id="segundo"><img src="imgs/cardapioPng.png" alt="cardapio"><p>Cardápio</p></button></a></li>
+                    <li><a href="estoque.html"><button><img src="imgs/estoquePng.png" alt="Estoque" ><p>Estoque</p></button></a></li>
+                    <li><a href="renda.html"><button><img src="imgs/Renda.png" alt="Renda"><p>Renda</p></button></a></li>
+                </ul>
+            </nav>
+ 
+            <div class="logo">
+                <img src="imgs/logoMenor.png" alt="Order">
+            </div>
+           
+        </aside>
+   
+ 
+    <div class="containerEditMesas">
+       <h1>Edição de mesas</h1>
         <div class="mesas-container">
             <button onclick=criarMesa()>Adicionar mesa</button>
-            
-            <div id="mesas">
-                <!--- As mesas criadas pelo botão ficam aqui dentro --->
-            </div>
+            <select id="selectLugaresMesa">
+                <option value="section1" id="doisLugares">2 lugares</option>
+                <option value="section2" id="quatroLugares">4 lugares</option>
+                <option value="section3" id="seisLugares">6 lugares</option>
+                <option value="section4" id="dezLugares">10 lugares</option>
+            </select>
         </div>
+           
+           
+            <div class="sectionMesa dois-lugares">
+                <div id="mesas">
+                    <!--- As mesas criadas pelo botão ficam aqui dentro --->
+                </div>
+            </div>
+            <div class="sectionMesa quatro-lugares">
+                <div id="mesas">
+                    <!--- As mesas criadas pelo botão ficam aqui dentro --->
+                </div>
+            </div>
+            <div class="sectionMesa seis-lugares">
+                <div id="mesas">
+                    <!--- As mesas criadas pelo botão ficam aqui dentro --->
+                </div>
+            </div>
+            <div class="sectionMesa dez-lugares">
+                <div id="mesas">
+                    <!--- As mesas criadas pelo botão ficam aqui dentro --->
+                </div>
+            </div>
+           
+       
     </div>
-    
-
+   
+ 
     <script src="js/CriarMesas.js"></script>
     <!-- <script src="js/ExpandirSideBar.js"></script> -->
 </body>
